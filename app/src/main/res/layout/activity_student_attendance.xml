@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Authentication.StudentAttendance">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Students Attendance"
+        android:textSize="35dp"
+        android:layout_marginTop="16dp"
+        android:textAlignment="center"
+        android:textStyle="italic"
+        android:id="@+id/id"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp"
+        android:layout_below="@+id/id"
+        android:textSize="25dp"
+        android:includeFontPadding="true"
+        android:id="@+id/StudentDeatials"
+        />
+
+    </RelativeLayout>
+
+</ScrollView>
