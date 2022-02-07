@@ -42,17 +42,6 @@ class ClassInformation : AppCompatActivity() {
         val Class = findViewById<EditText>(R.id.class1)
         val Div = findViewById<EditText>(R.id.div)
         val Student = findViewById<EditText>(R.id.noOfStudent)
-        val next = findViewById<Button>(R.id.nxt)
-        val documentId = currentUser!!.uid
-
-
-
-
-        next.setOnClickListener {
-                startActivity(Intent(applicationContext,HomePage::class.java))
-
-            finish()
-        }
 
 
         start.setOnClickListener {
@@ -96,7 +85,8 @@ class ClassInformation : AppCompatActivity() {
                         ).show()
                     }
 
-
+            startActivity(Intent(applicationContext,HomePage::class.java))
+            finish()
 
         }
 

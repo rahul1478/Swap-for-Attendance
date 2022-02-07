@@ -10,12 +10,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
+        android:fontFamily="@font/aguafina_script"
         android:text="WELCOME"
-        android:textSize="45dp"
         android:textAlignment="center"
-        android:textStyle="italic"
         android:textColor="#5B2CA6"
-        />
+        android:textSize="45dp"
+
+        android:textStyle="italic" />
 
     <com.google.android.gms.common.SignInButton
         android:layout_width="390dp"

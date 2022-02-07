@@ -1,11 +1,12 @@
 package com.example.attendanceapp.Authentication
 
+import android.app.Activity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
-import com.example.attendanceapp.Authentication.models.ClassInformation
+import androidx.activity.result.contract.ActivityResultContracts
 import com.example.attendanceapp.Authentication.models.HomePage
 import com.example.attendanceapp.R
 import com.google.android.gms.auth.api.signin.GoogleSignIn
@@ -20,6 +21,7 @@ class SignIn : AppCompatActivity() {
 
     companion object{
         private const val RC_SIGN_IN = 120
+
     }
 
     private lateinit var mAuth: FirebaseAuth
@@ -39,21 +41,15 @@ class SignIn : AppCompatActivity() {
         mAuth = FirebaseAuth.getInstance()
 
         signIn.setOnClickListener {
-            signIn()
-
+            resultLauncher.launch(Intent(googleSignInClient.signInIntent))
         }
 
     }
-    private fun signIn() {
-        val signInIntent = googleSignInClient.signInIntent
-        startActivityForResult(signInIntent, RC_SIGN_IN)
+    var resultLauncher = registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { result ->
 
-    }
-
-    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
-        super.onActivityResult(requestCode, resultCode, data)
-        // Result returned from launching the Intent from GoogleSignInApi.getSignInIntent(...);
-        if (requestCode == RC_SIGN_IN) {
+        if (result.resultCode == Activity.RESULT_OK) {
+            // There are no request codes
+            val data: Intent? = result.data
             val task = GoogleSignIn.getSignedInAccountFromIntent(data)
             val exception = task.exception
             if (task.isSuccessful){
@@ -68,12 +64,13 @@ class SignIn : AppCompatActivity() {
                 }
             }else{
                 Log.w("SignIn", exception.toString())
+                Toast.makeText(this,"Failed",Toast.LENGTH_LONG).show()
             }
-
-        }else{
-
         }
+
     }
+
+
     private fun firebaseAuthWithGoogle(idToken: String) {
         val credential = GoogleAuthProvider.getCredential(idToken, null)
         mAuth.signInWithCredential(credential)

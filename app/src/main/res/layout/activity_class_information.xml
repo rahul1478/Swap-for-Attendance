@@ -13,44 +13,45 @@
         android:layout_marginTop="20dp"
         android:text="Class Information"
         android:textAlignment="center"
+        android:textColor="@color/black"
         android:textSize="30dp"
         android:textStyle="italic"
-        android:textColorHighlight="@color/white"
+        android:fontFamily="@font/butcherman"
         />
 
     <EditText
+        android:id="@+id/class1"
         android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="150dp"
+        android:layout_height="45dp"
         android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
         android:background="@drawable/edit_edittext"
         android:hint="CLASS"
-        android:textColorHint="@color/black"
-        android:textAlignment="center"
-        android:textColor="@color/black"
-        android:textSize="25dp"
-        android:id="@+id/class1"
         android:inputType="numberDecimal"
-
-
-        />
-    <EditText
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="250dp"
-        android:layout_centerHorizontal="true"
-        android:background="@drawable/edit_edittext"
-
-        android:hint="DIV"
-        android:id="@+id/div"
+        android:textAlignment="center"
         android:textColor="@color/black"
         android:textColorHint="@color/black"
-        android:textAlignment="center"
-        android:textSize="25dp"
+        android:textSize="18dp"
+
+
         />
+
+    <EditText
+        android:id="@+id/div"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="250dp"
+
+        android:background="@drawable/edit_edittext"
+        android:hint="DIV"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textColorHint="@color/black"
+        android:textSize="18dp" />
     <EditText
         android:layout_width="300dp"
-        android:layout_height="wrap_content"
+        android:layout_height="45dp"
         android:layout_marginTop="350dp"
         android:layout_centerHorizontal="true"
         android:background="@drawable/edit_edittext"
@@ -58,33 +59,25 @@
         android:hint="NUMBER OF STUDENT"
         android:textColorHint="@color/black"
         android:textAlignment="center"
-        android:textSize="20dp"
-        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:textColor="@color/white"
         android:inputType="numberDecimal"
         android:id="@+id/noOfStudent"
 
         />
+
     <Button
+        android:id="@+id/senddata"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:backgroundTint="@color/white"
-        android:layout_marginTop="550dp"
         android:layout_centerHorizontal="true"
+        android:layout_marginTop="550dp"
+        android:backgroundTint="@color/black"
         android:text="SAVE"
-        android:textColor="@color/black"
-        android:id="@+id/senddata"
+        android:textColor="@color/white"
 
         />
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:backgroundTint="@color/white"
-        android:id="@+id/nxt"
-        android:layout_marginTop="660dp"
-        android:layout_marginLeft="300dp"
-        android:text="NEXT"
-        android:textColor="@color/black"
-        />
+
 
 
 </RelativeLayout>

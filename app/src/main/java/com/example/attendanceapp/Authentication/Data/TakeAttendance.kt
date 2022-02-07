@@ -52,12 +52,10 @@ class TakeAttendance : AppCompatActivity() {
 
 
         mAuth = FirebaseFirestore.getInstance()
-        val mAuth1 = Firebase.auth
 
 
-        val Class = findViewById<EditText>(R.id.class1)
-        val Div = findViewById<EditText>(R.id.div)
-        val Student = findViewById<EditText>(R.id.noOfStudent)
+
+
         val date  = findViewById<TextView>(R.id.date)
         val btn = findViewById<Button>(R.id.savedata)
         val img = findViewById<ImageView>(R.id.Calender)
@@ -86,9 +84,9 @@ class TakeAttendance : AppCompatActivity() {
 //            for (i in 1.rangeTo(key)) {
 
 
-                if ( student.isNotEmpty()) {
+                if ( student.isNotEmpty() && date1.isNotEmpty()) {
 
-                    val model = AttebdanceModels(date1.toString(),Class,student)
+                    val model = AttebdanceModels(date1,Class,student)
 
                     mAuth.collection("Dates/").add(model)
                         .addOnSuccessListener(object : OnSuccessListener<DocumentReference> {
@@ -168,9 +166,7 @@ class TakeAttendance : AppCompatActivity() {
                         data.add(i+"  :  Present")
                     }
                 }
-
                 break
-
             }
 //            Toast.makeText(this@TakeAttendance, ""+data, Toast.LENGTH_SHORT).show()
 

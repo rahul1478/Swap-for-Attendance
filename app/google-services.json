@@ -16,7 +16,7 @@
       "oauth_client": [
         {
           "client_id": "385294166964-2dphh60klplftmjplekqbf0vlf0corrl.apps.googleusercontent.com",
-          "client_type":1,
+          "client_type": 1,
           "android_info": {
             "package_name": "com.example.attendanceapp",
             "certificate_hash": "48db9fcbf69c649ea794f235040f46b8153fd8c1"

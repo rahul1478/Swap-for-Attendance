@@ -4,19 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/black"
     tools:context=".Authentication.models.HomePage">
 
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/butcherman"
         android:text="Class Details"
         android:textAlignment="center"
         android:textSize="35dp"
-        android:layout_marginTop="20dp"
         android:textStyle="italic"
-
+        android:textColor="@color/teal_700"
         />
 
 
@@ -24,9 +24,8 @@
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="80dp"
         android:id="@+id/rycl"
-
         />
 
 
@@ -34,14 +33,14 @@
 
 
         />
+
     <ImageView
+        android:id="@+id/add"
         android:layout_width="75dp"
         android:layout_height="75dp"
-        android:src="@drawable/ic_baseline_add_circle_24"
-        android:layout_marginTop="620dp"
         android:layout_marginLeft="300dp"
-        android:id="@+id/add"
-        />
+        android:layout_marginTop="620dp"
+        android:src="@drawable/ic_baseline_add_circle_24" />
     <ImageView
         android:layout_width="75dp"
         android:layout_height="75dp"
