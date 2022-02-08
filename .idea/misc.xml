@@ -12,6 +12,7 @@
         <entry key="..\:/Users/Rahul Bhalerao/AndroidStudioProjects/Swap-for-Attendance/app/src/main/res/drawable/edit_edittext.xml" value="0.193" />
         <entry key="..\:/Users/Rahul Bhalerao/AndroidStudioProjects/Swap-for-Attendance/app/src/main/res/drawable/ic_baseline_add_circle_24.xml" value="0.193" />
         <entry key="..\:/Users/Rahul Bhalerao/AndroidStudioProjects/Swap-for-Attendance/app/src/main/res/drawable/ic_baseline_save_24.xml" value="0.193" />
+        <entry key="..\:/Users/Rahul Bhalerao/AndroidStudioProjects/Swap-for-Attendance/app/src/main/res/drawable/swiperelative.xml" value="0.193" />
         <entry key="..\:/Users/Rahul Bhalerao/AndroidStudioProjects/Swap-for-Attendance/app/src/main/res/layout/activity_attendance_data.xml" value="0.22826086956521738" />
         <entry key="..\:/Users/Rahul Bhalerao/AndroidStudioProjects/Swap-for-Attendance/app/src/main/res/layout/activity_class_information.xml" value="0.22826086956521738" />
         <entry key="..\:/Users/Rahul Bhalerao/AndroidStudioProjects/Swap-for-Attendance/app/src/main/res/layout/activity_dash_board.xml" value="0.22826086956521738" />
@@ -22,6 +23,7 @@
         <entry key="..\:/Users/Rahul Bhalerao/AndroidStudioProjects/Swap-for-Attendance/app/src/main/res/layout/activity_take_attendance.xml" value="0.22826086956521738" />
         <entry key="..\:/Users/Rahul Bhalerao/AndroidStudioProjects/Swap-for-Attendance/app/src/main/res/layout/classanddiv.xml" value="0.22826086956521738" />
         <entry key="..\:/Users/Rahul Bhalerao/AndroidStudioProjects/Swap-for-Attendance/app/src/main/res/layout/daily_dates.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/Rahul Bhalerao/AndroidStudioProjects/Swap-for-Attendance/app/src/main/res/layout/swipe_texts.xml" value="0.22826086956521738" />
       </map>
     </option>
   </component>

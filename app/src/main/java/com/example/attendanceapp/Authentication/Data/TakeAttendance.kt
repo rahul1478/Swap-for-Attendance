@@ -54,8 +54,6 @@ class TakeAttendance : AppCompatActivity() {
         mAuth = FirebaseFirestore.getInstance()
 
 
-
-
         val date  = findViewById<TextView>(R.id.date)
         val btn = findViewById<Button>(R.id.savedata)
         val img = findViewById<ImageView>(R.id.Calender)

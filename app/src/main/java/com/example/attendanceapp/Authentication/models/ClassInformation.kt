@@ -46,8 +46,6 @@ class ClassInformation : AppCompatActivity() {
 
         start.setOnClickListener {
 
-
-
                     val Class1 = Class.text.toString().trim()
                     val Div1 = Div.text.toString().trim()
                     val Student1 = Student.text.toString().trim()

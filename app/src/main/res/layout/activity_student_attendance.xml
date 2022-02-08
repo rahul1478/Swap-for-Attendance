@@ -15,13 +15,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
+            android:fontFamily="@font/butcherman"
             android:text="Students Attendance"
             android:textAlignment="center"
-            android:textSize="35dp"
-            android:textStyle="italic"
-            android:fontFamily="@font/butcherman"
             android:textColor="@color/black"
-            />
+            android:textSize="30dp"
+            android:textStyle="italic" />
 
         <TextView
             android:id="@+id/StudentDeatials"
